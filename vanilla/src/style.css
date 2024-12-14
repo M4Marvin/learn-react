@@ -1,0 +1,167 @@
+/* =========================
+   1. Root & Global Styles
+   ========================= */
+   :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    /* Light/Dark mode toggles */
+    color-scheme: light dark;
+  
+    /* Default color & background in dark mode */
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  
+    /* Typography & rendering optimizations */
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* =========================
+     2. Base Element Styles
+     ========================= */
+  a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+  }
+  
+  a:hover {
+    color: #535bf2;
+  }
+  
+  body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+  }
+  
+  #app {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  /* =========================
+     3. Logo & Card Styles
+     ========================= */
+  .logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  
+  .logo.vanilla:hover {
+    filter: drop-shadow(0 0 2em #f7df1eaa);
+  }
+  
+  .card {
+    padding: 2em;
+  }
+  
+  .read-the-docs {
+    color: #888;
+  }
+  
+  /* =========================
+     4. Global Button Styles
+     ========================= */
+  button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  
+  button:hover {
+    border-color: #646cff;
+  }
+  
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+  
+  /* =========================
+     5. Media Query (Light Mode)
+     ========================= */
+  @media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+  
+    a:hover {
+      color: #747bff;
+    }
+  
+    button {
+      background-color: #f9f9f9;
+    }
+  }
+  
+  /* =========================
+     6. Counter App Styles
+     ========================= */
+  .counter-container {
+    color: black;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 200px;
+    margin: 0 auto; /* Center if desired */
+  }
+  
+  .counter-container h1 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .display {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  /* Specific overrides for counter buttons */
+  .buttons button {
+    border: none;             /* Overrides global button border */
+    border-radius: 4px;       /* Overrides global button border-radius */
+    background-color: #ddd;   /* Overrides global button background */
+    padding: 0.5rem 1rem;     /* Slightly different spacing */
+    font-size: 1.25rem;
+    transition: background-color 0.2s;
+  }
+  
+  .buttons button:hover {
+    background-color: #ccc;
+  }
+  
